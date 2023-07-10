@@ -24,7 +24,7 @@ class Venda:
 
         self.container3 = Frame(master, padx=5, pady=5)
         self.container3.pack()
-        self.lblvendedor = Label(self.container3, text='Produto', font=self.fonte, width=10, anchor=E, justify=RIGHT)
+        self.lblvendedor = Label(self.container3, text='Vendedor(a)', font=self.fonte, width=10, anchor=E, justify=RIGHT)
         self.lblvendedor.pack(side=LEFT)
         self.txtvendedor = Entry(self.container3, width=10, font=self.fonte)
         self.txtvendedor.pack(side=LEFT)
@@ -38,14 +38,14 @@ class Venda:
 
         self.container5 = Frame(master, padx=5, pady=5)
         self.container5.pack()
-        self.lblquantidade = Label(self.container5, text='Produto', font=self.fonte, width=10, anchor=E, justify=RIGHT)
+        self.lblquantidade = Label(self.container5, text='Quantidade', font=self.fonte, width=10, anchor=E, justify=RIGHT)
         self.lblquantidade.pack(side=LEFT)
         self.txtquantidade = Entry(self.container5, width=10, font=self.fonte)
         self.txtquantidade.pack(side=LEFT)
 
         self.container6 = Frame(master, padx=5, pady=5)
         self.container6.pack()
-        self.lblunidade = Label(self.container6, text='Produto', font=self.fonte, width=10, anchor=E, justify=RIGHT)
+        self.lblunidade = Label(self.container6, text='Unidade', font=self.fonte, width=10, anchor=E, justify=RIGHT)
         self.lblunidade.pack(side=LEFT)
         self.txtunidade = Entry(self.container6, width=10, font=self.fonte)
         self.txtunidade.pack(side=LEFT)
