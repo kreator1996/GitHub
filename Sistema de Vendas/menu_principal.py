@@ -9,10 +9,11 @@ root = Tk()
 def showJanela(event=None):
     window = tkinter.Toplevel(root)
     window.title('Registro de Vendas')
-    window.geometry('400x350')
+    window.geometry('500x500')
+    window.transient(root)
     Venda(window)
-    root.mainloop()
-
+    root.wait_window(window)
+    
 def showSobre(event=None):
     tkinter.messagebox.showinfo('Sobre', 
                                 '{}{}'.format(APP_TITLE, 'Meu Sistema Gráfico\ncom Python e Tkinter'))
@@ -40,7 +41,7 @@ def principal():
     montarMenu()
     root.protocol("WM_DELETE_WINDOW", sair)
     root.title(APP_TITLE)
-    root.geometry("600x400")
+    root.geometry("600x600")
     root.mainloop()
 
 if __name__ == '__main__':
